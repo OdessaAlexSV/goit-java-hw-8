@@ -1,6 +1,7 @@
 /out
 *.iml
 .idea
+.idea/workspace.xml
 
 # Compiled class file
 *.class
