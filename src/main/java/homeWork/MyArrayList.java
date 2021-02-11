@@ -14,7 +14,7 @@ import java.util.Arrays;
  */
 
 public class MyArrayList<E> {
-    private static final int INITIAL_CAPACITY = 5;
+    private static final int INITIAL_CAPACITY = 10;
     private Object[] elementArray = {};
     private int size = 0;
 
