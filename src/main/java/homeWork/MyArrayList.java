@@ -53,11 +53,12 @@ public class MyArrayList<E> {
         size = 0;
     }
 
-    public void get(int index) {
+    public E get(int index) {
         try {
-            System.out.println("Element[" + index + "] is : " + elementArray[index]);
+            return (E) elementArray[index];
         } catch (ArrayIndexOutOfBoundsException exception) {
-            System.out.println("Element[" + index +"] not found");
+            System.out.print("Element[" + index +"] not found : ");
+            return null;
         }
     }
 

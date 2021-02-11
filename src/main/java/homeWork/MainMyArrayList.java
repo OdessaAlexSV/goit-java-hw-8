@@ -22,8 +22,9 @@ public class MainMyArrayList {
         System.out.println("Array size = "+myArrayList.size());
         System.out.println("-".repeat(15));
 
-        myArrayList.get(10);
-        myArrayList.get(0);
+        System.out.println(myArrayList.get(10));
+        System.out.println(myArrayList.get(0));
+
         myArrayList.remove(15);
         myArrayList.remove(0);
         System.out.println(myArrayList);
