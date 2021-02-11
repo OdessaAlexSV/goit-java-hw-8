@@ -21,8 +21,8 @@ public class MainMyLinkedList {
         System.out.println("Size = " + myLinkedList.size());
         System.out.println("-".repeat(15));
 
-        myLinkedList.get(10);
-        myLinkedList.get(2);
+        System.out.println(myLinkedList.get(10));
+        System.out.println(myLinkedList.get(2));
         System.out.println("-".repeat(15));
 
         myLinkedList.insert(1, "NEW");

@@ -59,14 +59,15 @@ public class MyLinkedList<E> {
         }
     }
 
-    public void get(int index) {
+    public E get(int index) {
         if (isIndexCorrect(index)) {
             Node currentNode = head;
             for (int i = 0; i < index; i++) {
                 currentNode = currentNode.nextItem;
             }
-            System.out.println("Element[" + index + "] is : " + currentNode.currentItem);
+            return (E) currentNode.currentItem;
         }
+        return null;
     }
 
     public void insert(int index, E item) {
@@ -114,7 +115,7 @@ public class MyLinkedList<E> {
 
     private boolean isIndexCorrect(int index) {
         if (!(index >= 0 && index < size)) {
-            System.out.println("Element[" + index + "] does not exist");
+            System.out.print("Element[" + index + "] does not exist : ");
         }
         return index >= 0 && index < size;
     }
